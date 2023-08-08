@@ -22,7 +22,7 @@ MLE.parallel <- function(mat, sf, D){
                      X, Y, sx, sy,
                      Ratio, D,
                      mc.set.seed = TRUE,
-                     mc.cores = 2
+                     mc.cores = 1
                      )
   #####
   res.MLE = matrix(unlist(res.MLE), nrow = length(res.MLE), byrow = TRUE)
