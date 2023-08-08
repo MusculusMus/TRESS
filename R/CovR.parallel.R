@@ -14,7 +14,7 @@ CovR.parallel <- function(mat, sf, model, variable,
   res = mclapply(seq_len(nrow(mat)), iCovR,
                  X, Y, sx, sy, D,
                  Coef, phi, theta,
-                 mc.cores = 2
+                 mc.cores = 1
                  )
   R = matrix(NA, nrow = nrow(mat), ncol = ncol(D))
   Cov = vector("list", length = nrow(mat))
